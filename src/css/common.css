@@ -16,3 +16,70 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* Стилі для datetime-picker */
+#datetime-picker {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+/* Стилі для кнопки Start */
+[data-start] {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #26c0d3;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+:disabled {
+  background-color:grey;
+}
+
+
+[data-start]:hover {
+  background-color: #1871e4;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+:disabled:hover {
+  background-color:grey;
+}
+
+/* Стилі для блоку таймера */
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Стилі для полів днів, годин, хвилин і секунд */
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.value {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
