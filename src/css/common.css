@@ -26,7 +26,8 @@ img {
 }
 
 /* Стилі для кнопки Start */
-[data-start] {
+[data-start],
+[data-stop] {
   display: block;
   margin: 10px 0;
   padding: 10px 20px;
@@ -43,7 +44,8 @@ img {
 }
 
 
-[data-start]:hover {
+[data-start]:hover,
+[data-stop]:hover {
   background-color: #1871e4;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
