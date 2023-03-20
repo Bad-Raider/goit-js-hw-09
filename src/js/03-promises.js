@@ -39,6 +39,8 @@ function handleFormSubmit(e) {
   };
 };
 
+
+
 //function  
 function createPromise(position, delay) {
   
