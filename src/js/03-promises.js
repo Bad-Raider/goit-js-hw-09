@@ -1,5 +1,7 @@
+// Notify library
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
+// DOM elements
 const refs = {
   formEl: document.querySelector("form"),
   inputDelayEl: document.getElementsByName("delay")[0],
@@ -8,9 +10,9 @@ const refs = {
   btnSubmitEL: document.querySelector("button"),
 }
 
-
+// processing submit form
 refs.formEl.addEventListener("submit", handleFormSubmit);
-
+// handler form
 function handleFormSubmit(e) {
 
   e.preventDefault();
@@ -35,8 +37,9 @@ function handleFormSubmit(e) {
         Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
     });
   };
-}
+};
 
+//function  
 function createPromise(position, delay) {
   
      return new Promise((resolve, reject) => {
@@ -51,5 +54,5 @@ function createPromise(position, delay) {
       };
        }, delay);
     });
-}
+};
 
