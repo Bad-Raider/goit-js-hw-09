@@ -37,6 +37,7 @@ function handleFormSubmit(e) {
         Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
     });
   };
+  refs.formEl.reset();
 };
 
 
